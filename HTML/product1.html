@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products</title>
+    <link rel="stylesheet" href="../CSS/Product1.css">
+		<link rel="icon" href="https://1000logos.net/wp-content/uploads/2016/10/Canon-Logo-500x313.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="./LandingPage.html" id="logo"><span>Canon</span></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./LandingPage.html" target="_blank">  Home</a></li>
+                    <li><a href="#filterButtonDiv" class="active">Products</a></li>
+                    
+                    <li><a href="#support">Support</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="./SignIn.html"><button class="btn btn-signin">Sign In</button></a>
+                <a href="./SignIn.html"></a><button class="btn btn-register">Register</button></a>
+                <a href="./Cart.html"><button class="btn btn-car"><i class="fa-solid fa-cart-shopping"></i></button></a>
+            </div>
+        </div>
+    </header>
+
+
+<!-------------Filter Button ------------>
+<div class="filterButtonDiv" id="filterButtonDiv">
+<button onclick="displayAll()" class="filterButton"> All</button>
+<button onclick="displayCameras()" class="filterButton"> Cameras</button>
+<button onclick="displayLenses()" class="filterButton"> Lenses</button>
+</div>
+
+<!-- -------- Abdelrahman Rabeea -------------->
+
+  <!-- <section class="about-section">
+    <div class="about-box">
+      <h1>About Canon</h1>
+      <div class="line"></div>
+      <p>
+        Canon is forging ahead toward grand strategic transformation for new growth
+      </p>
+      <a href="#" class="about-btn">Learn More →</a>
+    </div>
+    </section><br> <br> -->
+
+
+<div class="camerasDiv" id="camerasDiv">
+<section class="cards" id="cards">
+        <div class="card">
+        <div class="img-wrapper">
+<img class="cards-img" width="250px" src="https://images.unsplash.com/photo-1720170719834-f0015025b326?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870">
+        </div>
+        <div class="rating">
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+        </div>
+        <h2 class="product-name">Canon EOS R</h2>
+        <p class="summary">get a 20% Discount on first order</p>
+        <p class="price">$215</p>
+          <div class="action">      
+        <button class="card-btn" onclick="sendToLocal(event)" >
+              <i class="fa-solid fa-cart-shopping"></i>
+            <p>Add to cart</p>
+        </button>
+          </div>
+    
+    </div>
+          <div class="card">
+        <div class="img-wrapper">
+<img class="cards-img" width="250px" src="https://images.unsplash.com/photo-1619401952369-c5bdeb8f0185?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870">
+        </div>
+        <div class="rating">
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+        </div>
+        <h2 class="product-name">Canon EOS Ra</h2>
+        <p class="summary">get a 20% Discount on first order</p>
+        <p class="price">$325</p>
+           <div class="action">      
+        <button class="card-btn" onclick="sendToLocal(event)">
+              <i class="fa-solid fa-cart-shopping"></i>
+            <p>Add to cart</p>
+        </button>
+           </div>
+    
+     </div>
+              <div class="card">
+        <div class="img-wrapper">
+<img class="cards-img" width="250px" src="https://images.unsplash.com/photo-1643962249999-34d12130763a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=891">
+        </div>
+        <div class="rating">
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+        </div>
+        <h2 class="product-name">Canon EOS RP</h2>
+        <p class="summary">get a 20% Discount on first order</p>
+        <p class="price">$200</p>
+           <div class="action">      
+        <button class="card-btn" onclick="sendToLocal(event)">
+              <i class="fa-solid fa-cart-shopping"></i>
+            <p>Add to cart</p>
+        </button>
+           </div>
+    
+     </div>
+              <div class="card">
+        <div class="img-wrapper">
+<img class="cards-img" width="250px" src="https://images.unsplash.com/photo-1615717552595-f44e17e9c596?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870">
+        </div>
+        <div class="rating">
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+        </div>
+        <h2 class="product-name">Canon EOS R10</h2>
+        <p class="summary">get a 20% Discount on first order</p>
+        <p class="price">$320</p>
+           <div class="action">      
+        <button class="card-btn" onclick="sendToLocal(event)">
+              <i class="fa-solid fa-cart-shopping"></i>
+            <p>Add to cart</p>
+        </button>
+           </div>
+    
+     </div>
+     
+    
+</section>
+
+
+<section class="cards">
+            <div class="card">
+        <div class="img-wrapper">
+<img class="cards-img" width="250px" src="https://images.unsplash.com/photo-1679556032506-e9a856f1db22?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870">
+        </div>
+        <div class="rating">
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+        </div>
+        <h2 class="product-name">Canon EOS R5</h2>
+        <p class="summary">get a 20% Discount on first order</p>
+        <p class="price">$400</p>
+          <div class="action">      
+        <button class="card-btn" onclick="sendToLocal(event)">
+              <i class="fa-solid fa-cart-shopping"></i>
+            <p>Add to cart</p>
+        </button>
+          </div>
+    
+    </div>
+              <div class="card">
+        <div class="img-wrapper">
+<img class="cards-img" width="250px" src="https://images.unsplash.com/photo-1728974250821-0ce0c43616f1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870">
+        </div>
+        <div class="rating">
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            
+        </div>
+        <h2 class="product-name">Canon EOS R6</h2>
+        <p class="summary">get a 20% Discount on first order</p>
+        <p class="price">$200</p>
+          <div class="action">      
+        <button class="card-btn" onclick="sendToLocal(event)">
+              <i class="fa-solid fa-cart-shopping"></i>
+            <p>Add to cart</p>
+        </button>
+          </div>
+    
+    </div>
+              <div class="card">
+        <div class="img-wrapper">
+<img class="cards-img" width="250px" src="https://images.unsplash.com/photo-1625061007512-1c2583870fc4?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=812">
+        </div>
+        <div class="rating">
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+        </div>
+        <h2 class="product-name">Canon EOS R3</h2>
+        <p class="summary">get a 20% Discount on first order</p>
+        <p class="price">$190</p>
+          <div class="action">      
+        <button class="card-btn" onclick="sendToLocal(event)">
+              <i class="fa-solid fa-cart-shopping"></i>
+            <p>Add to cart</p>
+        </button>
+          </div>
+    
+    </div>
+              <div class="card">
+        <div class="img-wrapper">
+<img class="cards-img" width="250px" src="https://images.unsplash.com/photo-1621218702600-29f8a357fce4?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=803">
+        </div>
+        <div class="rating">
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+        </div>
+        <h2 class="product-name">Canon EOS R8</h2>
+        <p class="summary">get a 20% Discount on first order</p>
+        <p class="price">$100</p>
+          <div class="action">      
+        <button class="card-btn" onclick="sendToLocal(event)">
+              <i class="fa-solid fa-cart-shopping"></i>
+            <p>Add to cart</p>
+        </button>
+          </div>
+    
+    </div>
+</section>
+
+<section class="cards" id="cards">
+        <div class="card">
+        <div class="img-wrapper">
+<img class="cards-img" width="250px" src="https://images.unsplash.com/photo-1519638831568-d9897f54ed69?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870">
+        </div>
+        <div class="rating">
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+        </div>
+        <h2 class="product-name">Canon EOS R5 C</h2>
+        <p class="summary">get a 20% Discount on first order</p>
+        <p class="price">$215</p>
+          <div class="action">      
+        <button class="card-btn" onclick="sendToLocal(event)">
+              <i class="fa-solid fa-cart-shopping"></i>
+            <p>Add to cart</p>
+        </button>
+          </div>
+    
+    </div>
+          <div class="card">
+        <div class="img-wrapper">
+<img class="cards-img" width="250px" src="https://images.unsplash.com/photo-1751107996077-aee030806ca5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=877">
+        </div>
+        <div class="rating">
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+        </div>
+        <h2 class="product-name">Canon EOS R6 Mark II</h2>
+        <p class="summary">get a 20% Discount on first order</p>
+        <p class="price">$325</p>
+          <div class="action">      
+        <button class="card-btn" onclick="sendToLocal(event)" >
+              <i class="fa-solid fa-cart-shopping"></i>
+            <p>Add to cart</p>
+        </button>
+          </div>
+    
+    </div>
+              <div class="card">
+        <div class="img-wrapper">
+<img class="cards-img" width="250px" src="https://images.unsplash.com/photo-1560891686-aab98542a171?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=877">
+        </div>
+        <div class="rating">
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+        </div>
+        <h2 class="product-name">Canon EOS R5 Mark II</h2>
+        <p class="summary">get a 20% Discount on first order</p>
+        <p class="price">$200</p>
+          <div class="action">      
+        <button class="card-btn" onclick="sendToLocal(event)">
+              <i class="fa-solid fa-cart-shopping"></i>
+            <p>Add to cart</p>
+        </button>
+          </div>
+    
+    </div>
+              <div class="card">
+        <div class="img-wrapper">
+<img class="cards-img" width="250px" src="https://images.unsplash.com/photo-1498050842100-717f08672ac6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870">
+        </div>
+        <div class="rating">
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+            <i class=" filled fa-solid fa-star"></i>
+        </div>
+        <h2 class="product-name">Canon EOS R1</h2>
+        <p class="summary">get a 20% Discount on first order</p>
+        <p class="price">$320</p>
+          <div class="action">      
+        <button class="card-btn" onclick="sendToLocal(event)">
+              <i class="fa-solid fa-cart-shopping"></i>
+            <p>Add to cart</p>
+        </button>
+          </div>
+    
+    </div>
+
+    
+    
+    
+</section>
+</div>
+
+
+
+
+
+
+<!----------- Mario Fouad -------------->
+<div class="lensesDiv"  id="lensesDiv">
+
+<section class="product-container">
+
+        <div class="product-card">
+
+            <img class="cards-img" src="https://images.unsplash.com/photo-1677787774908-1e66a60a1edb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDk3fHx8ZW58MHx8fHx8&auto=format&fit=crop&q=60&w=600"
+                alt="Product 1">
+            <h3 class="product-name">Canon RF 24mm Lens</h3>
+            <p>get 15% Discount on first order</p>
+            <p class="price" id="price" >320$</p>
+        <div class="action">      
+        <button class="card-btn" onclick="sendToLocal2(event)" >
+              <i class="fa-solid fa-cart-shopping"></i>
+            <p>Add to cart</p>
+        </button>
+          </div>
+
+        
+
+        </div>
+
+        <div class="product-card">
+
+
+            <img class="cards-img" src="https://images.unsplash.com/photo-1598334037463-d5fc81c34ddf?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDM3fHx8ZW58MHx8fHx8&auto=format&fit=crop&q=60&w=600"
+                alt="Product 2">
+
+            <h3 class="product-name">Canon RF 50mm VCM</h3>
+            <p class="p"> get a 15% Discount on first order</p>
+            <p class="price" id="price">250$</p>
+          <div class="action">      
+        <button class="card-btn" onclick="sendToLocal2(event)" >
+              <i class="fa-solid fa-cart-shopping"></i>
+            <p>Add to cart</p>
+        </button>
+          </div>
+
+        </div>
+
+        <div class="product-card">
+
+            <img class="cards-img" src="https://images.unsplash.com/photo-1616269995799-a7fdabfb24c1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNhbm9uJTIwY2FtZXJhJTIwbGVuc2VzJTIwNTBtbXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600"
+                alt="Product 3">
+            <h3 class="product-name"> Canon RF 85mm US</h3>
+            <p>get a 15% Discount on first order</p>
+            <p class="price" id="price1">290$</p>
+            <div class="action">      
+        <button class="card-btn" onclick="sendToLocal2(event)" >
+              <i class="fa-solid fa-cart-shopping"></i>
+            <p>Add to cart</p>
+        </button>
+          </div>
+          </div>
+        <div class="product-card">
+
+            <img class="cards-img" src="https://media.istockphoto.com/id/1322170460/photo/modern-camera-lense.jpg?s=612x612&w=0&k=20&c=GPlJTvuoY4I2ExI3nUz2aOQAd30fCGEP6BASuqQXjnw="
+                alt="Product 4">
+            <h3 class="product-name">Canon RF 50mm USM</h3>
+            <p>get a 15% Discount on first order</p>
+            <p class="price" id="price1">400$</p>
+            <div class="action">      
+        <button class="card-btn" onclick="sendToLocal2(event)" >
+              <i class="fa-solid fa-cart-shopping"></i>
+            <p>Add to cart</p>
+        </button>
+          </div>
+        </div>
+
+    </section>
+
+
+    <!--الصف الثاني للعدسات-->
+
+    <section class="product-container">
+
+
+        <div class="product-card">
+
+            <img class="cards-img" src="https://images.unsplash.com/photo-1683220535723-69dddd5ebc35?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
+                alt="Product 1">
+            <h3 class="product-name">Canon RB 24mm Lens</h3>
+            <p>get 15% Discount on first order</p>
+            <p class="price" id="price4">320$</p>
+            <div class="action">      
+        <button class="card-btn" onclick="sendToLocal2(event)" >
+              <i class="fa-solid fa-cart-shopping"></i>
+            <p>Add to cart</p>
+        </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+
+            <img class="cards-img" src="https://media.istockphoto.com/id/1161009179/photo/camera-lens-in-green-environment.jpg?s=1024x1024&w=is&k=20&c=3FPFMjx_eHt9JXt-Z7VHG8a8-wMqhbSabtGTvzKMqj4="
+                alt="Product 2">
+            <h3 class="product-name">Canon RF 50mm PIM</h3>
+            <p class="p"> get a 15% Discount on first order</p>
+            <p class="price" id="price5">250$</p>
+         <div class="action">      
+        <button class="card-btn" onclick="sendToLocal2(event)" >
+              <i class="fa-solid fa-cart-shopping"></i>
+            <p>Add to cart</p>
+        </button>
+          </div>
+
+        </div>
+
+        <div class="product-card">
+            <img class="cards-img" src="https://images.unsplash.com/photo-1694852756105-4198d616f697?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&q=60&w=600"
+                alt="Product 3">
+            <h3 class="product-name"> Canon RF 85mm US</h3>
+            <p>get a 15% Discount on first order</p>
+
+            <p class="price" id="price1">240$</p>
+           <div class="action">      
+        <button class="card-btn" onclick="sendToLocal2(event)" >
+              <i class="fa-solid fa-cart-shopping"></i>
+            <p>Add to cart</p>
+        </button>
+          </div>
+
+
+        </div>
+
+        <div class="product-card">
+            <img class="cards-img" src="https://images.unsplash.com/photo-1600110351460-006d6067dcc7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&q=60&w=600"
+                alt="Product 4">
+            <h3 class="product-name">Canon RF 50mm USM</h3>
+            <p>get a 15% Discount on first order</p>
+            <p class="price" id="price1">430$</p>
+           <div class="action">      
+        <button class="card-btn" onclick="sendToLocal2(event)" >
+              <i class="fa-solid fa-cart-shopping"></i>
+            <p>Add to cart</p>
+        </button>
+          </div>
+
+
+    </section>
+
+
+
+    <!--الصف الثالث للعدسات-->
+
+
+    <section class="product-container">
+
+        <div class="product-card">
+
+            <img class="cards-img" src="https://images.unsplash.com/photo-1550543160-7d20703cf260?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
+                alt="Product 1">
+            <h3 class="product-name">Canon EF 35mm USM</h3>
+            <p>get 15% Discount on first order</p>
+            <p class="price" id="price">310$</p>
+           <div class="action">      
+        <button class="card-btn" onclick="sendToLocal2(event)" >
+              <i class="fa-solid fa-cart-shopping"></i>
+            <p>Add to cart</p>
+        </button>
+          </div>
+
+        </div>
+
+        <div class="product-card">
+
+
+            <img class="cards-img" src="https://images.unsplash.com/photo-1668548700708-42d9b641344e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
+                alt="Product 2">
+
+            <h3 class="product-name">Canon EF 100-400mm</h3>
+            <p class="p"> get a 15% Discount on first order</p>
+            <p class="price" id="price">250$</p>
+           <div class="action">      
+        <button class="card-btn" onclick="sendToLocal2(event)" >
+              <i class="fa-solid fa-cart-shopping"></i>
+            <p>Add to cart</p>
+        </button>
+          </div>
+
+        </div>
+
+        <div class="product-card">
+
+            <img class="cards-img" src="https://images.unsplash.com/photo-1640043888881-7ad77d263339?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&q=60&w=600"
+                alt="Product 3">
+            <h3 class="product-name"> Canon RF 70-200mm</h3>
+            <p>get a 15% Discount on first order</p>
+            <p class="price" id="price1">410$</p>
+           <div class="action">      
+        <button class="card-btn" onclick="sendToLocal2(event)" >
+              <i class="fa-solid fa-cart-shopping"></i>
+            <p>Add to cart</p>
+        </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+
+            <img class="cards-img" src="https://images.unsplash.com/photo-1604677209492-763493452f54?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
+            alt="Product 4">
+            <h3 class="product-name">Canon EF 50mm IM</h3>
+            <p>get a 15% Discount on first order</p>
+            <p class="price" id="price1">370$</p>
+           <div class="action">      
+        <button class="card-btn" onclick="sendToLocal2(event)" >
+              <i class="fa-solid fa-cart-shopping"></i>
+            <p>Add to cart</p>
+        </button>
+          </div>
+        </div>
+
+
+    </section>
+
+</div>
+
+
+
+	<!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About Canon</h3>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Leadership</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Newsroom</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="./product1.html#camerasDiv">Cameras</a></li>
+                        <li><a href="./product1.html#lensesDiv">Lenses</a></li>
+                        <li><a href="#">Printers</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Software</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Product Support</a></li>
+                        <li><a href="#">Drivers & Downloads</a></li>
+                        <li><a href="#">Warranty & Repair</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Knowledge Base</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 id="support">Connect With Us</h3>
+                    <p>Follow Canon on social media for the latest news and updates.</p>
+                    <div class="social-icons" id="Support">
+                        <a href="https://www.facebook.com/CanonMiddleEast/?utm_source=chatgpt.com"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/CanonUSA?utm_source=chatgpt.com"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/canonusa/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/CanonUSA"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com/company/canonusa?utm_source=chatgpt.com"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ITI Youth Group. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+<!-- ------- Youssef Alaa ------------->
+<script>
+	
+	function displayAll(){
+		document.querySelector('.camerasDiv').style.display = 'block';
+		document.querySelector('.lensesDiv').style.display = 'block';
+	}
+
+	function displayCameras(){
+		document.querySelector('.camerasDiv').style.display = 'block';
+		document.querySelector('.lensesDiv').style.display = 'none';
+		}
+
+	function displayLenses(){
+			document.querySelector('.camerasDiv').style.display = 'none';
+			document.querySelector('.lensesDiv').style.display = 'block';
+		}
+
+	function sendToLocal(e) {
+  var product = e.target.closest(".card");
+  var image = product.querySelector(".cards-img").src;
+  var name = product.querySelector(".product-name").textContent;
+  var priceText = product.querySelector(".price").textContent;
+  var price = parseFloat(priceText.replace("$", "").trim());
+  // هنجلب المنتجات القديمة من localStorage أو نبدأ بآريه فاضية
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  // نبحث لو المنتج موجود بالفعل
+  existingProduct = cart.find(item => item.name === name);
+
+  if (existingProduct) {
+    existingProduct.quantity += 1;
+  } else {
+    cart.push({ name, image, quantity: 1 , price}); 
+  }
+
+  localStorage.setItem("cart", JSON.stringify(cart));
+  alert(`${name} added to cart!`);
+}
+
+	function sendToLocal2(e) {
+  var product = e.target.closest(".product-card");
+  var image = product.querySelector(".cards-img").src;
+  var name = product.querySelector(".product-name").textContent;
+  var priceText = product.querySelector(".price").textContent;
+  var price = parseFloat(priceText.replace("$", "").trim());
+  // هنجلب المنتجات القديمة من localStorage أو نبدأ بآريه فاضية
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  // نبحث لو المنتج موجود بالفعل
+  existingProduct = cart.find(item => item.name === name);
+
+  if (existingProduct) {
+    existingProduct.quantity += 1;
+  } else {
+    cart.push({ name, image, quantity: 1 , price}); 
+  }
+
+  localStorage.setItem("cart", JSON.stringify(cart));
+  alert(`${name} added to cart!`);
+}
+
+
+</script>
+</body>
+</html>

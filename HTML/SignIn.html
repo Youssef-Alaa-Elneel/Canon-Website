@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canon ID Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="website icon" href="https://1000logos.net/wp-content/uploads/2016/10/Canon-Logo-500x313.png">
+
+
+
+
+
+
+  <style>
+   body {
+      font-family: Arial, sans-serif;
+      background-color:#efe8e8;
+      color: #c6b3b3;
+      margin: 0;
+      padding: 0;
+      transition: 0.3s;
+    }
+
+
+
+    .container {
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+
+    
+
+    /* صورة كانون*/
+    img.logo {
+      width: 120px;
+      margin-bottom: 10px;
+    }
+
+
+
+    h2 {
+      margin-bottom: 5px;
+      color: #222;
+    }
+
+
+
+    p {
+      color: gray;
+      margin-bottom: 20px;
+    }
+
+
+
+    .social-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      color: #fff;
+      transition: 0.3s;
+    }
+
+
+
+    .social-btn i {
+      margin-right: 8px;
+      font-size: 18px;
+    }
+
+
+
+    /* ايقونة جوجل */
+    .google {
+  background-color: #fff;
+  color: #444;
+  border: 1px solid #ccc;
+}
+.google img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+
+
+    .facebook i {
+      /* خلفية الدايرة */
+  background-color:blue;
+  /* لون الحرف */
+  color: white;  
+  border-radius: 50%;        
+  width: 28px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin-right: 10px;
+}
+.facebook{
+  background-color: rgb(184, 138, 138);
+}
+    .x { background-color: #000; }
+    .apple { background-color: #333; }
+    .social-btn:hover { opacity: 0.85; }
+
+
+
+    .show-more {
+      color: #0073e6;
+      font-size: 14px;
+      margin: 10px 0;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+
+
+    input[type="email"], .password-container {
+      width: 100%;
+      margin: 8px 0;
+      position: relative;
+    }
+
+
+
+    input[type="email"], input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+      background-color: #fff;
+      color: #000;
+      transition: 0.3s;
+    }
+
+
+
+    .forgot {
+      display: block;
+      text-align: right;
+      margin-bottom: 15px;
+      color: #0073e6;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+
+
+    .signin-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #d60017;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+
+
+    .signin-btn:hover { background-color: #b00013; }
+    .create {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+    .create a { color:blue; text-decoration: none; }
+    .create a:hover { text-decoration: underline; }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://1000logos.net/wp-content/uploads/2016/10/Canon-Logo-500x313.png" alt="Canon Logo" class="logo">
+    <h2>Canon ID</h2>
+    <p>Manage your Canon ID account</p>
+  <button class="social-btn google">
+  <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google logo">
+  Continue with Google </button>
+    <button class="social-btn facebook"><i class="fab fa-facebook-f"></i> Continue with Facebook</button>
+    <button class="social-btn x"><i class="fab fa-x-twitter"></i> Continue with X</button>
+    <button class="social-btn apple"><i class="fab fa-apple"></i> Continue with Apple</button>
+
+    <div class="show-more">Show more</div>
+    <form action="./product1.html" method="post">
+      <input type="email" placeholder="Email address" required>
+      <div class="password-container">
+        <input type="password" id="password" placeholder="Password" required>
+      </div>
+
+      <a href="#" class="forgot">Forgot password?</a>
+      <button type="submit" class="signin-btn">Sign in</button>
+    </form>
+
+    <div class="create">
+      Don’t have an account? <a href="#">Create one</a>
+    </div>
+  </div>
+  
+
+<script>
+document.querySelector("form").addEventListener("submit", function(e) {
+  let email = document.querySelector("input[type='email']").value;
+  let password = document.getElementById("password").value;
+
+  if (!email.includes("@")) {
+    alert("Please enter a valid email address.");
+    e.preventDefault();
+  } else if (password.length < 8) {
+    alert("Password must be at least 8 characters long.");
+    e.preventDefault();
+  }
+});
+</script>
+
+
+</body>
+</html>

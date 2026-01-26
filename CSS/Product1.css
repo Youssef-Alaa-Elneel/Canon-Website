@@ -513,11 +513,15 @@ color: white;
 
 
      /* Responsive Design */
-@media (max-width: 999px){
+/* @media (max-width: 999px){
     .cards{
         flex-wrap: wrap;
     }
 
+    .product-container{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
 
 
@@ -551,7 +555,11 @@ color: white;
                 align-items: center;
                
             }
-          
+
+            .product-container{
+            flex-direction: column;
+            flex-wrap: wrap;
+    }
         }
 
         @media (max-width: 600px) {
@@ -590,9 +598,111 @@ color: white;
                  padding: 15px 0;
                  flex-wrap: wrap;
             }
-          
-        }
+            .product-container{
+                flex-direction: column;
+                flex-wrap: wrap;
+    }
+        } */
 
+/* ===============================
+   RESPONSIVE MEDIA QUERIES
+   =============================== */
+
+/* ---------- Tablets & Small Screens ---------- */
+@media (max-width: 992px) {
+
+  .header-container {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cards,
+  .product-container {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+}
+
+/* ---------- Tablets & Mobiles ---------- */
+@media (max-width: 768px) {
+
+  /* Header */
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .auth-buttons {
+    justify-content: center;
+  }
+
+  /* Filter Buttons */
+  .filterButtonDiv {
+    height: auto;
+    padding: 15px;
+  }
+
+  .filterButton {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  /* Cards */
+  .cards,
+  .product-container {
+    padding: 20px;
+    justify-content: center;
+  }
+
+  .card,
+  .product-card,
+  .product-card1 {
+    width: 100%;
+    max-width: 320px;
+  }
+
+}
+
+/* ---------- Small Mobiles ---------- */
+@media (max-width: 480px) {
+
+  .logo span {
+    font-size: 20px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .auth-buttons {
+    flex-direction: column;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+}
 
 
 

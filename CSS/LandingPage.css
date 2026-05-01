@@ -49,9 +49,9 @@
             color: #bc002d;
         }
 
-        #logo{
-					text-decoration: none;
-				}
+        #logo {
+            text-decoration: none;
+        }
 
         nav ul {
             display: flex;
@@ -237,63 +237,106 @@
         .btn-product:hover {
             background-color: #bc002d;
         }
-   /*-----------------section2------------------*/
-.background{
-  background-color: rgb(255, 255, 255);
-  color: aliceblue;
-}
-.background-img1 {
-  border: 1px solid rgb(245, 243, 243);
-border-radius:.5cm;
-}
-.photo1-text1{
-  display: flex;
-  justify-content: space-around;
-  /* margin: 17px; */
-    padding: 17px;
 
-}
-.text1{
-  color: rgb(0, 0, 0);
-margin-left: 8vw;
-margin-right: 5vw;
-margin-top: 6vh;
+        /*-----------------section2------------------*/
 
-}
+        .featured-showcase {
+            background-color: #ffffff;
+            /* خلفية بيضاء */
+            color: #333333;
+            padding: 80px 20px;
+        }
 
-#text1p{
-  font-weight: 80Px;
-  font-style:italic;
-}
+        .showcase-row {
+            max-width: 1150px;
+            margin: 0 auto 80px;
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
 
-.photo2-text2{
-  display: flex;
-  justify-content: space-around;
-  /* margin: 17px; */
-  padding: 17px;
-}
-.background-img2 {
-  border: 2px solid rgb(12, 12, 12);
-  border-radius:.5cm;
-}
-.text2{
-  color: rgb(0, 0, 0);
-margin-left: 8vw;
-margin-right: 5vw;
-margin-top: 6vh;
+        .showcase-row:last-child {
+            margin-bottom: 0;
+        }
 
-}
+        /* الكلاس اللي بيعكس الترتيب في الصف التاني */
+        .showcase-row.reverse {
+            flex-direction: row-reverse;
+        }
 
-#button-readmore{
-           background-color: #000000;
-            color: rgb(243, 32, 32);
-            padding: 12px 30px;
-            font-size: 18px;
-            border-radius: 30px;
-            text-decoration: none;
+        .showcase-content {
+            flex: 1;
+        }
+
+        .showcase-content h2 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            color: #000000;
+        }
+
+        .showcase-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 35px;
+            color: #666666;
+            /* رمادي غامق علشان يكون مريح للعين */
+        }
+
+        .btn-canon {
             display: inline-block;
-            transition: background-color 0.3s;
-}
+            background-color: #bc002d;
+            /* لون كانون الأحمر */
+            color: #ffffff;
+            padding: 12px 30px;
+            border-radius: 30px;
+            /* واخد نفس ستايل الزرار اللي في أول صفحة عندك */
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-canon:hover {
+            background-color: #a00024;
+            /* أحمر أغمق شوية لما تعمل Hover */
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(188, 0, 45, 0.2);
+        }
+
+        .showcase-image {
+            flex: 1;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+            /* شادو خفيف للمسة احترافية */
+        }
+
+        .showcase-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .showcase-image:hover img {
+            transform: scale(1.03);
+            /* زووم خفيف على الصورة */
+        }
+
+        /* Responsive Design للموبايل */
+        @media (max-width: 900px) {
+
+            .showcase-row,
+            .showcase-row.reverse {
+                flex-direction: column;
+                text-align: center;
+                gap: 40px;
+            }
+
+            .showcase-content h2 {
+                font-size: 2.2rem;
+            }
+        }
 
         /* Footer */
         footer {
@@ -438,104 +481,96 @@ margin-top: 6vh;
 
         } */
 
-@media (max-width: 768px) {
+        @media (max-width: 768px) {
 
-    /* Header */
-    .header-container {
-        flex-direction: column;
-        gap: 15px;
-    }
+            /* Header */
+            .header-container {
+                flex-direction: column;
+                gap: 15px;
+            }
 
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
 
-    .auth-buttons {
-        justify-content: center;
-    }
+            .auth-buttons {
+                justify-content: center;
+            }
 
-    /* Hero */
-    .hero {
-        height: auto;
-        padding: 80px 20px;
-    }
+            /* Hero */
+            .hero {
+                height: auto;
+                padding: 80px 20px;
+            }
 
-    .hero h1 {
-        font-size: 30px;
-    }
+            .hero h1 {
+                font-size: 30px;
+            }
 
-    .hero p {
-        font-size: 16px;
-    }
+            .hero p {
+                font-size: 16px;
+            }
 
-    /* Products */
-    .section-title h2 {
-        font-size: 28px;
-    }
+            /* Products */
+            .section-title h2 {
+                font-size: 28px;
+            }
 
-    /* Section 2 */
-    .photo1-text1,
-    .photo2-text2 {
-        flex-direction: column;
-        text-align: center;
-    }
+            /* Section 2 */
+            .showcase-row,
+            .showcase-row.reverse {
+                flex-direction: column;
+                text-align: center;
+                gap: 40px;
+            }
 
-    .background-img1,
-    .background-img2 {
-        width: 100%;
-        height: auto;
-    }
+            .showcase-content h2 {
+                font-size: 2.2rem;
+            }
 
-    .text1,
-    .text2 {
-        margin: 20px 0;
-    }
+            /* Footer */
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
 
-    /* Footer */
-    .footer-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
+            .social-icons {
+                justify-content: center;
+            }
+        }
 
-    .social-icons {
-        justify-content: center;
-    }
-    }
+        @media (min-width: 769px) and (max-width: 1024px) {
 
-@media (min-width: 769px) and (max-width: 1024px) {
+            /* Hero */
+            .hero h1 {
+                font-size: 38px;
+            }
 
-    /* Hero */
-    .hero h1 {
-        font-size: 38px;
-    }
+            .hero p {
+                font-size: 18px;
+            }
 
-    .hero p {
-        font-size: 18px;
-    }
+            /* Section 2 */
+            .showcase-row,
+            .showcase-row.reverse {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 40px;
+            }
 
-    /* Section 2 */
-    .photo1-text1,
-    .photo2-text2 {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+            .showcase-image {
+                width: 90%;
+            }
 
-    .background-img1,
-    .background-img2 {
-        width: 90%;
-        height: auto;
-    }
+            .showcase-content {
+                margin: 20px 0;
+            }
 
-    .text1,
-    .text2 {
-        margin: 20px 0;
-    }
-
-    /* Footer */
-    .footer-content {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
+            /* Footer */
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
